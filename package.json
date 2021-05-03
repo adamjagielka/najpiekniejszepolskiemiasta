@@ -1,0 +1,12 @@
+{
+  "name": "najpiekniejszepolskiemiasta",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node serwer.js"
+  },
+  "dependencies": {
+   "express" : "4.17.1"
+  },
+  "author": "Adam Jagielka",
+  "license": "ISC"
+}
