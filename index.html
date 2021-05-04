@@ -143,13 +143,7 @@
 
 		}
 
-		button {
-			background: rgba(245, 255, 240, 0.7);
-			color: darkgreen;
-			font-size: 16px;
-			border-radius: 25px;
 
-		}
 
 		#textSize {
 			width: 80px;
@@ -160,7 +154,7 @@
 			height: 700px;
 			overflow: hidden;
 			margin: auto;
-
+			
 		}
 
 
@@ -178,12 +172,10 @@
 			/* poczatkowa wilekosc obrazka*/
 
 
-			border-left: 1px solid #888;
 
-
-			-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-			-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-			box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+			-webkit-box-shadow: 0 0 35px 10px rgba(0, 0, 0, 0.3);
+			-moz-box-shadow: 0 0 35px 10px rgba(0, 0, 0, 0.3);
+			box-shadow: 0 0 35px 10px rgba(0, 0, 0, 0.3);
 
 
 			-webkit-transition: all 0.5s;
@@ -223,6 +215,60 @@
 				text-decoration: none;
 				
 				font-size: 16px;*/
+		}
+
+		button[class^="grow"]::after {
+			transition: all 0.3s ease;
+		}
+
+		button[class^="grow"]:hover::after {
+			transition: all 0.3s ease-out;
+		}
+
+		button.grow_box::after {
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			transform: scale(0, 0);
+		}
+
+		button.grow_box:hover::after {
+			transform: scale(1, 1);
+		}
+
+		button {
+			margin-left: 745px;
+			font-size: 1em;
+			background-color: green;
+			color: #fff;
+			border: 0.25rem solid green;
+			padding: 0.85em 0.75em;
+			z-index: 1;
+			overflow: hidden;
+			-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+			box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+			cursor: pointer;
+		}
+
+		button:hover {
+			color: green;
+			position: relative;
+		}
+
+		button::after {
+			content: "";
+			background: #ecf0f1;
+			position: absolute;
+			z-index: -1;
+			padding: 0.85em 0.75em;
+			display: block;
+		}
+
+		#przycisk {
+			position: absolute;
+			left: 800px;
 		}
 	</style>
 
@@ -320,12 +366,16 @@
 				</p>
 			</article>
 
-			<a
-				href="https://travelist.pl/search/channel:c13/dates:/price:0,1000/sortType:/tags:city370/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12 _PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=sandomierz">
-				<button class="advert">
-					Sprawdź dostępne hotele
-				</button>
-			</a>
+
+
+			<div class="przycisk">
+				<a
+					href="https://travelist.pl/search/channel:c13/dates:/price:0,1000/sortType:/tags:city370/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12 _PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=sandomierz">
+
+					<button class="grow_box">Sprawdź dostępne hotele</button>
+				</a>
+			</div>
+
 		</div>
 
 		<div id="two" class="rank">
@@ -384,12 +434,13 @@
 				</p>
 			</article>
 
-			<a
-				href="https://travelist.pl/search/channel:c13/dates:/price:0,1000/sortType:/tags:city18/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=krak%C3%B3w">
-				<button class="advert">
-					Sprawdź dostępne hotele
-				</button>
-			</a>
+			<div class="przycisk">
+				<a
+					href="https://travelist.pl/search/channel:c13/dates:/price:0,1000/sortType:/tags:city18/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=krak%C3%B3w">
+
+					<button class="grow_box">Sprawdź dostępne hotele</button>
+				</a>
+			</div>
 
 		</div>
 
@@ -449,12 +500,15 @@
 				</p>
 			</article>
 
-			<a
-				href="https://travelist.pl/search/channel:/dates:/price:0,1000/sortType:/tags:region17/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=%C5%82%C3%B3d%C5%BA">
-				<button class="advert">
-					Sprawdź dostępne hotele
-				</button>
-			</a>
+			<div class="przycisk">
+				<a
+					href="https://travelist.pl/search/channel:/dates:/price:0,1000/sortType:/tags:region17/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=%C5%82%C3%B3d%C5%BA">
+
+					<button class="grow_box">Sprawdź dostępne hotele</button>
+				</a>
+			</div>
+
+
 
 		</div>
 
@@ -519,12 +573,16 @@
 				</p>
 			</article>
 
-			<a
-				href="https://travelist.pl/search/channel:/dates:/price:0,1000/sortType:/tags:region17/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=%C5%82%C3%B3d%C5%BA">
-				<button class="advert">
-					Sprawdź dostępne hotele
-				</button>
-			</a>
+
+			<div class="przycisk">
+				<a
+					href="https://travelist.pl/search/channel:/dates:/price:0,1000/sortType:/tags:region17/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=%C5%82%C3%B3d%C5%BA">
+
+					<button class="grow_box">Sprawdź dostępne hotele</button>
+				</a>
+			</div>
+
+
 
 		</div>
 
@@ -581,12 +639,15 @@
 				</p>
 			</article>
 
-			<a
-				href="https://travelist.pl/search/channel:/dates:/price:0,1000/sortType:/tags:city60/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=gda%C5%84sk">
-				<button class="advert">
-					Sprawdź dostępne hotele
-				</button>
-			</a>
+			<div class="przycisk">
+				<a
+					href="https://travelist.pl/search/channel:/dates:/price:0,1000/sortType:/tags:city60/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=gda%C5%84sk">
+
+					<button class="grow_box">Sprawdź dostępne hotele</button>
+				</a>
+			</div>
+
+
 
 		</div>
 
@@ -644,12 +705,15 @@
 				</p>
 			</article>
 
-			<a
-				href="https://travelist.pl/search/channel:/dates:/price:0,1000/sortType:/tags:city37/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=sopot">
-				<button class="advert">
-					Sprawdź dostępne hotele
-				</button>
-			</a>
+			<div class="przycisk">
+				<a
+					href="https://travelist.pl/search/channel:/dates:/price:0,1000/sortType:/tags:city37/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=sopot">
+
+					<button class="grow_box">Sprawdź dostępne hotele</button>
+				</a>
+			</div>
+
+
 
 		</div>
 
@@ -710,12 +774,15 @@
 				</p>
 			</article>
 
-			<a
-				href="https://travelist.pl/search/channel:/dates:/price:0,1000/sortType:/tags:city48/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=gdynia">
-				<button class="advert">
-					Sprawdź dostępne hotele
-				</button>
-			</a>
+			<div class="przycisk">
+				<a
+					href="https://travelist.pl/search/channel:/dates:/price:0,1000/sortType:/tags:city48/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=gdynia">
+
+					<button class="grow_box">Sprawdź dostępne hotele</button>
+				</a>
+			</div>
+
+
 
 		</div>
 
@@ -774,12 +841,15 @@
 				</p>
 			</article>
 
-			<a
-				href="https://travelist.pl/search/channel:/dates:/price:0,1000/sortType:/tags:city10/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=wroc%C5%82aw">
-				<button class="advert">
-					Sprawdź dostępne hotele
-				</button>
-			</a>
+			<div class="przycisk">
+				<a
+					href="https://travelist.pl/search/channel:/dates:/price:0,1000/sortType:/tags:city10/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=wroc%C5%82aw">
+
+					<button class="grow_box">Sprawdź dostępne hotele</button>
+				</a>
+			</div>
+
+
 
 		</div>
 
@@ -837,12 +907,15 @@
 				</p>
 			</article>
 
-			<a
-				href="https://travelist.pl/search/channel:/dates:/price:0,1000/sortType:/tags:city7/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=warszawa">
-				<button class="advert">
-					Sprawdź dostępne hotele
-				</button>
-			</a>
+			<div class="przycisk">
+				<a
+					href="https://travelist.pl/search/channel:/dates:/price:0,1000/sortType:/tags:city7/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=warszawa">
+
+					<button class="grow_box">Sprawdź dostępne hotele</button>
+				</a>
+			</div>
+
+
 
 		</div>
 
@@ -897,12 +970,15 @@
 				</p>
 			</article>
 
-			<a
-				href="https://travelist.pl/search/channel:/dates:/price:0,1000/sortType:/tags:city288/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=bydg">
-				<button class="advert">
-					Sprawdź dostępne hotele
-				</button>
-			</a>
+			<div class="przycisk">
+				<a
+					href="https://travelist.pl/search/channel:/dates:/price:0,1000/sortType:/tags:city288/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12%20_PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=bydg">
+
+					<button class="grow_box">Sprawdź dostępne hotele</button>
+				</a>
+			</div>
+
+
 
 		</div>
 
