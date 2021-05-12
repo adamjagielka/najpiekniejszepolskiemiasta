@@ -1,0 +1,70 @@
+
+#menu {
+	color: black;
+	background-color: rgba(195, 205, 190, 0.9);
+}
+
+#themee {
+	color: #181a1b;
+	background-color: rgba(195, 205, 190, 0.8);
+}
+
+#header {
+	color: black;
+	background-color: rgba(195, 205, 190, 0.8);
+}
+
+#descryption {
+	background: rgba(245, 255, 240, 0.7);
+}
+
+#ranking {
+	background: rgba(255, 255, 255, 0.2);
+	color: black;
+}
+
+.rank {
+	background: rgba(245, 255, 240, 0.7);
+}
+
+body {
+	background-image: url('panorama2.jpg');
+}
+
+footer {
+	color: black;
+	background-color: rgba(195, 205, 190, 0.8);
+}
+
+a {
+	color: green;
+}
+
+.accordian li {
+	-webkit-box-shadow: 0 0 35px 10px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0 35px 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 35px 10px rgba(0, 0, 0, 0.3);
+}
+
+button {
+	background-color: rgb(0, 150, 0);
+	color: #fff;
+	border: 0.25rem solid rgb(0, 150, 0);
+	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+	color: rgb(0, 150, 0);
+}
+
+button::after {
+	background: darkgray;
+	color: rgb(0, 150, 0);
+}
+
+#switch {
+	color: black;
+	background: rgba(175, 185, 170, 0.8);
+}

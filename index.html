@@ -3,58 +3,52 @@
 
 <head>
 
-
+	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Najpiękniejsze miasta w Polsce</title>
 	<base target="_blank">
-
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
+	
 	<style>
-		#all {}
-
-
-
-
-		#header1 {
-			font-size: 35px;
-			padding-left: 300px;
-			padding-right: 300px;
-			margin-left: 100px;
-			margin-right: 100px;
-			margin-top: 20px;
-			margin-bottom: 20px;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			color: white;
-			background: rgba(0, 0, 0, 0.2);
-		}
-
 		#menu {
 			position: fixed;
 			text-align: center;
 			font-size: 18px;
-			color: white;
-			background: rgba(0, 0, 0, 0.8);
 			margin-top: -400px;
 			width: 100%;
+			height: 80px;
+		}
+
+		#author {
+			text-align: center;
+		}
+
+		#themee {
+			position: absolute;
+			border-radius: 50px;
+			width: 10%;
+			align-items: left;
+			justify-content: space-between;
+			cursor: pointer;
+			transition: all .6s ease-in;
+			margin-top: -45px;
+			min-width: 80px;
 		}
 
 		#size {
+			margin-right: 2%;
+			position: static;
 			text-align: right;
-			color: white;
 			margin-top: -61px;
-			margin-right: 3%;
 		}
 
 		#header {
 			position: absolute;
 			text-align: center;
 			font-size: 18px;
-			color: white;
-			background: rgba(0, 0, 0, 0.8);
 			margin-top: -332px;
 			width: 100%;
 		}
@@ -66,36 +60,30 @@
 			padding-right: 5%;
 			padding-bottom: 1%;
 			padding-top: 1%;
-			background: rgba(245, 255, 240, 0.6);
 			font-style: italic;
 			text-align: justify;
 		}
 
 		#ranking {
 			border-radius: 25px;
-			padding-left: 5%;
-			padding-right: 5%;
-			padding-bottom: 5%;
-			margin-left: 8%;
-			margin-right: 8%;
+			padding-left: 4%;
+			padding-right: 4%;
+			padding-bottom: 4%;
+			margin-left: 4%;
+			margin-right: 4%;
 			margin-top: 400px;
-			margin-bottom: 5%;
-			background: rgba(0, 0, 0, 0.3);
+			margin-bottom: 4%;
+			background: rgba(255, 255, 255, 0.2);
 			font-size: 20px;
-
 		}
-
 
 		.rank {
 			margin-top: 5%;
-			background: rgba(245, 255, 240, 0.6);
 			padding-left: 5%;
 			padding-right: 5%;
 			padding-bottom: 5%;
 			padding-top: 1%;
 			border-radius: 50px;
-
-
 		}
 
 		.advert {
@@ -106,7 +94,6 @@
 		body {
 			font-family: "Lato";
 			line-height: 1.4;
-			background-image: url('panorama2.jpg');
 			background-position-y: -100px;
 			background-position-x: center;
 			margin: 0px;
@@ -114,8 +101,6 @@
 		}
 
 		footer {
-			color: white;
-			background: rgba(0, 0, 0, 0.8);
 			padding-left: 100px;
 			padding-right: 100px;
 			padding-top: 10px;
@@ -128,7 +113,6 @@
 
 
 		article {
-
 			text-align: justify;
 		}
 
@@ -139,18 +123,9 @@
 		}
 
 		img {
-
 			width: 100%;
 			height: auto;
-
 		}
-
-		a {
-			color: darkgreen;
-
-		}
-
-
 
 		#textSize {
 			width: 80px;
@@ -158,46 +133,50 @@
 
 		.accordian {
 			width: 100%;
-			height: 700px;
+			
 			overflow: hidden;
 			margin: auto;
-
+			
+      
+	  object-fit: cover;
+			
 		}
 
 
-		.accordian ul {
+		.accordianul {
+			height: 550px;
 			width: 100%;
-			height: 700px;
+			
+      
+	  object-fit: cover;
 		}
 
 		.accordian li {
-
-
 			display: block;
 			list-style-position: inside;
-			width: 1362px;
+			
 			/* poczatkowa wilekosc obrazka*/
-
-
-
-			-webkit-box-shadow: 0 0 35px 10px rgba(0, 0, 0, 0.3);
-			-moz-box-shadow: 0 0 35px 10px rgba(0, 0, 0, 0.3);
-			box-shadow: 0 0 35px 10px rgba(0, 0, 0, 0.3);
-
-
 			-webkit-transition: all 0.5s;
 			-moz-transition: all 0.5s;
 			transition: all 0.5s;
+			width: 100%;
+      
+        object-fit: cover;
 		}
 
 
 		.accordian ul:hover li {
 			width: 100px;
+			width: 8%;
+      
+	  object-fit: cover;
 		}
 
 		/*miniaturki*/
 		.accordian ul li:hover {
-			width: 700px;
+			width: 50%;
+      
+	  object-fit: cover;
 		}
 
 		/*  wielkosc po powiększeniu*/
@@ -207,22 +186,21 @@
 			display: block;
 		}
 
-		.image_title {
-			/*	background: rgba(0, 0, 0, 0);
+	/*	.image_title {
+				background: rgba(0, 0, 0, 0);
 				position: relative;
 				left: 0; bottom: 0;	
 				width: 800px;	
-				*/
-
+				
 		}
 
 		.image_title a {
-			/*	display: block;
+				display: block;
 				color: #fff;
 				text-decoration: none;
 				
-				font-size: 16px;*/
-		}
+				font-size: 16px;
+		}*/
 
 		button[class^="grow"]::after {
 			transition: all 0.3s ease;
@@ -248,27 +226,20 @@
 
 
 			font-size: 1em;
-			background-color: green;
-			color: #fff;
-			border: 0.25rem solid green;
+			;
 			padding: 0.85em 0.75em;
 			z-index: 1;
 			overflow: hidden;
-			-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-			-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-			box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
 			cursor: pointer;
 			border-radius: 20px;
 		}
 
 		button:hover {
-			color: green;
 			position: relative;
 		}
 
 		button::after {
 			content: "";
-			background: #ecf0f1;
 			position: absolute;
 			z-index: -1;
 			padding: 0.85em 0.75em;
@@ -280,19 +251,31 @@
 			text-align: right;
 
 		}
+
+		#switch {
+			padding: 0.45em 0.35em;
+			width: 100%;
+		}
 	</style>
-
-
 
 </head>
 
 <body>
 
-
 	<div id="menu">
-		<p>Adam Jagiełka</p>
+		<div id="author">
+			<p>Adam Jagiełka</p>
+		</div>
+
+		<div id="themee">
+			<link rel="stylesheet" href="light.css" id="theme">
+			<button id="switch" class="grow_box"> Ciemny </button>
+		</div>
+
+
+
 		<div id="size">
-			<p>zmiana rozmiaru tekstu</p>
+			<p>Zmiana rozmiaru tekstu</p>
 			<span> 10</span>
 			<input type="range" min="10" max="40" value="20" id="textSizeSlider">
 			<span> 40</span>
@@ -323,7 +306,7 @@
 			<article>
 				<h2>1. Sandomierz</h2>
 				<div class="accordian">
-					<ul>
+					<ul class="accordianul">
 						<li>
 							<div class="image_title">
 								<a></a>
@@ -376,8 +359,6 @@
 				</p>
 			</article>
 
-
-
 			<div class="przycisk">
 				<a
 					href="https://travelist.pl/search/channel:c13/dates:/price:0,1000/sortType:/tags:city370/rooms:[2,[]]/page:1?MWID=TRA_PL_MAG_TRA_0000_NON_0000_ART_RAN_0_M12 _PHOT_CHN_20201113_13-11-20&noleadrequired=on#query=sandomierz">
@@ -393,7 +374,7 @@
 				<h2>2. Kraków</h2>
 
 				<div class="accordian">
-					<ul>
+					<ul class="accordianul">
 						<li>
 							<div class="image_title">
 								<a></a>
@@ -458,7 +439,7 @@
 			<article>
 				<h2>3. Zamość</h2>
 				<div class="accordian">
-					<ul>
+					<ul class="accordianul">
 						<li>
 							<div class="image_title">
 								<a></a>
@@ -518,15 +499,13 @@
 				</a>
 			</div>
 
-
-
 		</div>
 
 		<div id="four" class="rank">
 			<article>
 				<h2>4. Łódź</h2>
 				<div class="accordian">
-					<ul>
+					<ul class="accordianul">
 						<li>
 							<div class="image_title">
 								<a></a>
@@ -592,15 +571,13 @@
 				</a>
 			</div>
 
-
-
 		</div>
 
 		<div id="five" class="rank">
 			<article>
 				<h2>5. Gdańsk</h2>
 				<div class="accordian">
-					<ul>
+					<ul class="accordianul">
 						<li>
 							<div class="image_title">
 								<a></a>
@@ -657,15 +634,13 @@
 				</a>
 			</div>
 
-
-
 		</div>
 
 		<div id="six" class="rank">
 			<article>
 				<h2>6. Sopot</h2>
 				<div class="accordian">
-					<ul>
+					<ul class="accordianul">
 						<li>
 							<div class="image_title">
 								<a></a>
@@ -723,15 +698,13 @@
 				</a>
 			</div>
 
-
-
 		</div>
 
 		<div id="seven" class="rank">
 			<article>
 				<h2>7. Gdynia</h2>
 				<div class="accordian">
-					<ul>
+					<ul class="accordianul">
 						<li>
 							<div class="image_title">
 								<a></a>
@@ -792,15 +765,13 @@
 				</a>
 			</div>
 
-
-
 		</div>
 
 		<div id="eight" class="rank">
 			<article>
 				<h2>8. Wrocław</h2>
 				<div class="accordian">
-					<ul>
+					<ul class="accordianul">
 						<li>
 							<div class="image_title">
 								<a></a>
@@ -859,15 +830,13 @@
 				</a>
 			</div>
 
-
-
 		</div>
 
 		<div id="nine" class="rank">
 			<article>
 				<h2>9. Warszawa</h2>
 				<div class="accordian">
-					<ul>
+					<ul class="accordianul">
 						<li>
 							<div class="image_title">
 								<a></a>
@@ -925,15 +894,13 @@
 				</a>
 			</div>
 
-
-
 		</div>
 
 		<div id="ten" class="rank">
 			<article>
 				<h2>10. Bydgoszcz</h2>
 				<div class="accordian">
-					<ul>
+					<ul class="accordianul">
 						<li>
 							<div class="image_title">
 								<a></a>
@@ -988,8 +955,6 @@
 				</a>
 			</div>
 
-
-
 		</div>
 
 	</div>
@@ -1009,6 +974,40 @@
 			text.style.fontSize = this.value + "px";
 		}
 
+		var dark = true;
+
+		document.getElementById('switch').onclick = function () {
+
+			if (dark == false) {
+				document.getElementById('theme').href = "light.css";
+				dark = true;
+				document.getElementById('switch').innerHTML = "Ciemny";
+			}
+			else {
+				document.getElementById('theme').href = "dark.css";
+				dark = false;
+				document.getElementById('switch').innerHTML = "Jasny";
+			}
+			console.log(document.getElementById('switch').value);
+		};
+
+		onresize = function()
+		
+		{
+		var x=0;
+
+		while ( x<=10)
+		{
+			
+		document.getElementsByClassName('accordianul')[x].style.width = window.screen.width *7/8 + "px";
+		document.getElementsByClassName('accordianul')[x].style.height = (window.screen.width*40)/100 + "px";
+		x++;
+		if(x>=10)
+		{
+			break;
+		}
+	}
+}
 	</script>
 
 </body>

@@ -1,0 +1,74 @@
+#header1 {
+	color: white;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+#menu {
+	color: white;
+	background: rgba(0, 0, 0, 0.9);
+}
+
+#themee {
+	color: #181a1b;
+	background-color: #f2f2f2;
+}
+
+#header {
+	color: white;
+	background: rgba(0, 0, 0, 0.9);
+}
+
+#descryption {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+#ranking {
+	background: rgba(0, 0, 0, 0.3);
+	color: lightgray;
+}
+
+.rank {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+body {
+	background-image: url('panorama2dark.jpg');
+}
+
+footer {
+	color: white;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+a {
+	color: darkgreen;
+}
+
+.accordian li {
+	-webkit-box-shadow: 0 0 35px 10px rgba(255, 255, 255, 0.2);
+	-moz-box-shadow: 0 0 35px 10px rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 35px 10px rgba(255, 255, 255, 0.2);
+}
+
+button {
+	background-color: darkgreen;
+	color: #fff;
+	border: 0.25rem solid darkgreen;
+	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+	color: darkgreen;
+}
+
+button::after {
+	background: lightgray;
+	color: darkgreen;
+}
+
+#switch {
+	color: white;
+	background-color: black;
+}
